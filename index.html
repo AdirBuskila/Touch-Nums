@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <div class="msg headshot-3"></div>
+    <div class="msg1 headshot-3"></div>
+    <h1>Touch The Nums!</h1>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch The Nums</title>
+    <button class="reset" onclick="restGame()">Reset</button>
+    <div class="time"></div>
+    <button style="background-color:green" class="headshot headshot-3" onclick="easy()">Easy</br>(16)</button>
+    <button style="background-color:orange" class="headshot headshot-3" onclick="medium()">Medium</br>(25)</button>
+    <button style="background-color:red" class="headshot headshot-3" onclick="hard()">Hard</br>(36)</button>
+    <hr>
+</head>
+
+<body onload="init()">
+
+    <table>
+        <tbody class="board">
+
+        </tbody>
+    </table>
+    <div class="root">
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+body {
+    text-align: center;
+    /* background-color: rgb(212, 194, 194); */
+    background-image: url('../img/bg.jpg');
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+button.headshot:hover {
+    transform: scale(1.2);
+}
+
+h1 {
+    font-size: 40px;
+    color: chartreuse;
+    /* transition: 2s; */
+}
+
+h1:hover {
+    animation: left-to-right 1.5s ease-in forwards;
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0%);
+        color: chartreuse;
+        /* transform: scale(1); */
+    }
+    25% {
+        transform: translateX(10%);
+        color: crimson;
+        /* transform: scale(1.5); */
+    }
+    75% {
+        transform: translateX(-10%);
+        color: cyan;
+        /* transform: scale(0.5); */
+    }
+    100% {
+        transform: translateX(0%);
+        color: chartreuse;
+        /* transform: scale(1); */
+    }
+}
+
+table .pressed {
+    opacity: 40%;
+    transition: 0.2s;
+}
+
+td {
+    transition: 0.4s;
+}
+
+td:hover {
+    cursor: pointer;
+    color: tomato
+}
+
+div.msg {
+    width: 300px;
+    height: 70;
+    background-color: tomato;
+    /* display: none; */
+    position: absolute;
+    right: 30px;
+    border-style: groove;
+    font-size: 30px;
+    top: 50px;
+}
+
+div.msg1 {
+    width: 300px;
+    height: 70;
+    background-color: tomato;
+    /* display: none; */
+    position: absolute;
+    left: 30px;
+    border-style: groove;
+    font-size: 30px;
+    top: 50px;
+}
+
+div.msg.none {
+    display: none;
+}
+
+.board td {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 40px;
+}
+
+button.headshot {
+    flex-shrink: 0;
+    margin: 20px;
+    height: 75px;
+    width: 75px;
+    border: calc(8px + 0.2vw) solid blue;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    color: white;
+}
+
+.headshot-3 {
+    border-radius: 50% 10%;
+}
+
+table {
+    margin: auto;
+    display: inline;
+}
+
+div.root {
+    display: inline;
+}
+
+img {
+    height: 120px;
+    position: absolute;
+    left: 100px;
+    top: 363px;
+}
+
+img.img1 {
+    height: 120px;
+    position: absolute;
+    left: 1000px;
+    top: 363px;
+}
+
+button.reset:hover {
+    background-color: rgb(236, 57, 25);
+}
+
+button.reset {
+    margin-bottom: 5px;
+    background-color: tomato;
+    height: 30px;
+    border-radius: 10%;
+    font-size: 15px;
+}
+
+.shape-outer {
+    flex-shrink: 0;
+    height: calc(150px + 4vw);
+    width: calc(150px + 4vw);
+    margin: 25px;
+}
+
+.shape-inner {
+    height: calc(130px + 4vw);
+    width: calc(130px + 4vw);
+    background-size: cover;
+    margin: auto;
+}
+
+.pentagon {
+    -webkit-clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
+    clip-path: polygon(50% 0%, 100% 40%, 82% 100%, 18% 100%, 0% 40%);
+}
+
+.hexagon {
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.heptagon {
+    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 62%, 75% 100%, 25% 100%, 0% 62%, 10% 20%);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 62%, 75% 100%, 25% 100%, 0% 62%, 10% 20%);
+}
+
+.octagon {
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.nonagon {
+    -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+.decagon {
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 65%, 80% 90%, 50% 100%, 20% 90%, 0 65%, 0 35%, 20% 10%);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 65%, 80% 90%, 50% 100%, 20% 90%, 0 65%, 0 35%, 20% 10%);
+}
+
+.circle {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+
+.ellipse {
+    -webkit-clip-path: ellipse(35% 50% at 50% 50%);
+    clip-path: ellipse(35% 50% at 50% 50%);
+}
+
+.triangle {
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.rhombus {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.trapezoid {
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.parallelogram {
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.bevel {
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.rabbet {
+    -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.sign-left {
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.sign-right {
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.chevron-left {
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.chevron-right {
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
